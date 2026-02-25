@@ -414,6 +414,42 @@ html {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  background-color: var(--color-bg-surface);
+  padding: 24px 16px;
+
+  border-radius: var(--radius-md);
+  border-left: 8px solid var(--color-border-accent);
+
+  box-shadow: var(--shadow-md);
+}
+
+.project-card-title {
+  font-size: var(--fs-300);
+}
+
+.project-card-description {
+  font-size: var(--fs-100);
+  color: var(--color-text-secondary);
+  flex: 1;
+
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card-actions {
+  display: flex;
+  align-self: end;
+  margin-top: 12px;
+}
+
 
 /* 
 ========================================
@@ -433,6 +469,33 @@ html {
   box-shadow: var(--shadow-md);
 }
 
+.announcement-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.announcement-card-title {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-bold);
+}
+.announcement-card-description {
+  font-size: var(--fs-100);
+  color: var(--color-text-secondary);
+
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.horizontal-line-break {
+  border: none;
+  height: 1px;
+  background-color: var(--color-text-secondary);
+  opacity: 0.25;
+}
 
 /* 
 ========================================
